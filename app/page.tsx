@@ -1,3 +1,20 @@
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen flex items-center justify-center p-8 bg-gradient-to-br from-green-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
+      <div className="max-w-2xl w-full bg-white dark:bg-slate-800 rounded-xl p-8 shadow-xl">
+        <h1 className="text-3xl font-bold mb-2">Spotify Share</h1>
+        <p className="text-sm text-gray-600 dark:text-gray-300 mb-6">Share what you're listening to with friends.</p>
+
+        <div className="flex flex-col gap-3">
+          <a href="/api/auth/login" className="inline-block w-full text-center rounded-md bg-green-600 text-white px-4 py-3">Connect to Spotify</a>
+          <p className="text-sm text-gray-500">After connecting, you'll be redirected to your shareable profile page. Share that URL with friends.</p>
+        </div>
+      </div>
+    </main>
+  );
+}
 import Image from "next/image";
 
 export default function Home() {
